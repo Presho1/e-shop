@@ -28,7 +28,7 @@ const Footer = () => {
       <footer className='py-4'>
         <div className="container-xxl">
           <div className="row">
-            <div className="col-4">
+            <div className="col-lg-3 col-sm-6 col-md-4">
               <h4 className='text-white mb-4'>Contact Us</h4>
               <div>
                 <address className='text-white fs-6'>
@@ -59,7 +59,7 @@ const Footer = () => {
                 </div>
               </div>
             </div>
-            <div className="col-3">
+            <div className="col-lg-2 col-sm-6 c0l-6 col-md-4">
               <h4 className='text-white mb-4'>Information</h4>
               <div className='footer-links d-flex flex-column'>
                 <Link className='text-white py-2 mb-1'>Privacy Policy</Link>
@@ -69,7 +69,7 @@ const Footer = () => {
                 <Link className='text-white py-2 mb-1'>Blogs</Link>
               </div>
             </div>
-            <div className="col-3">
+            <div className="col-lg-2 col-sm-6 c0l-6 col-md-4">
               <h4 className='text-white mb-4'>Account</h4>
               <div className='footer-links d-flex flex-column'>
                 <Link className='text-white py-2 mb-1'>About</Link>
@@ -77,13 +77,27 @@ const Footer = () => {
                 <Link className='text-white py-2 mb-1'>Contact</Link>
               </div>
             </div>
-            <div className="col-2">
+            <div className="col-lg-2 col-sm-6 c0l-6 col-md-4">
               <h4 className='text-white mb-4'>Quick Links</h4>
               <div className='footer-links d-flex flex-column'>
                 <Link className='text-white py-2 mb-1'>Laptops</Link>
                 <Link className='text-white py-2 mb-1'>Headphones</Link>
                 <Link className='text-white py-2 mb-1'>Tablets</Link>
                 <Link className='text-white py-2 mb-1'>Smart Watches</Link>
+              </div>
+            </div>
+            <div className="col-lg-3 col-md-6 col-sm-6 col-6">
+              <h5 className='text-white mb-2'>Our App</h5>
+              <p className="text-secondary">
+                Download our App and get extra 10% discount on your first Order...!
+              </p>
+              <div className="footer-img-container row">
+                <Link to={`/`} className='col-6 m-1'>
+                  <img className='footer-img goog' src="./images/google.jpg" alt="" />
+                </Link>
+                <Link to={`/`} className='col-6 m-1'>
+                  <img className='footer-img' src="./images/app.svg" alt="" />
+                </Link>
               </div>
             </div>
           </div>
@@ -94,7 +108,7 @@ const Footer = () => {
           <div className="row">
             <div className="col-12">
               <p className='text-center mb-0 text-white'>
-                &copy; {new Date().getFullYear()}; Powered by Yinka
+                &copy; {new Date().getFullYear()}; Powered by Yinks ♥️
               </p>
             </div>
           </div>
