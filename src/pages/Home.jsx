@@ -309,7 +309,6 @@ const Home = () => {
           </div>
         </div>
       </section>
-      
       <section className="blog-wrapper py-5 home-wrapper-2">
         <div className="container-xxl">
           <div className="row">

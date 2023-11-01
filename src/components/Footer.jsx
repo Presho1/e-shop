@@ -39,7 +39,7 @@ const Footer = () => {
                 <a href="tel:+234 703 6778867" className='mt-3 d-block mb-1 text-white'>
                   +234 703 6778867
                 </a>
-                <a href="yinka:preciousolayinka8@gmail.com" 
+                <a href="mailto:preciousolayinka8@gmail.com" 
                   className='mt-2 d-block mb-0 text-white'>
                   preciousolayinka8@gmail.com
                 </a>
@@ -59,25 +59,25 @@ const Footer = () => {
                 </div>
               </div>
             </div>
-            <div className="col-lg-2 col-sm-6 c0l-6 col-md-4">
+            <div className="col-lg-2 col-sm-6 col-6 col-md-4">
               <h4 className='text-white mb-4'>Information</h4>
               <div className='footer-links d-flex flex-column'>
-                <Link className='text-white py-2 mb-1'>Privacy Policy</Link>
-                <Link className='text-white py-2 mb-1'>Refund Policy</Link>
-                <Link className='text-white py-2 mb-1'>Shipping Policy</Link>
-                <Link className='text-white py-2 mb-1'>Terms & Conditions</Link>
-                <Link className='text-white py-2 mb-1'>Blogs</Link>
+                <Link to='/privacy-policy' className='text-white py-2 mb-1'>Privacy Policy</Link>
+                <Link to='/refund-policy' className='text-white py-2 mb-1'>Refund Policy</Link>
+                <Link to='/shipping-policy' className='text-white py-2 mb-1'>Shipping Policy</Link>
+                <Link to='/term-conditions' className='text-white py-2 mb-1'>Terms & Conditions</Link>
+                <Link to='/blogs' className='text-white py-2 mb-1'>Blogs</Link>
               </div>
             </div>
-            <div className="col-lg-2 col-sm-6 c0l-6 col-md-4">
+            <div className="col-lg-2 col-sm-6 col-6 col-md-4">
               <h4 className='text-white mb-4'>Account</h4>
               <div className='footer-links d-flex flex-column'>
                 <Link className='text-white py-2 mb-1'>About</Link>
                 <Link className='text-white py-2 mb-1'>Faq</Link>
-                <Link className='text-white py-2 mb-1'>Contact</Link>
+                <Link to='/contact ' className='text-white py-2 mb-1'>Contact</Link>
               </div>
             </div>
-            <div className="col-lg-2 col-sm-6 c0l-6 col-md-4">
+            <div className="col-lg-2 col-sm-6 col-6 col-md-4">
               <h4 className='text-white mb-4'>Quick Links</h4>
               <div className='footer-links d-flex flex-column'>
                 <Link className='text-white py-2 mb-1'>Laptops</Link>

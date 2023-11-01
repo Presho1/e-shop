@@ -11,7 +11,7 @@ return (
                 <p className='date'>1 Dec, 2022  </p>
                 <h5 className="title">A beautiful sunday morning renaissance</h5>
                 <p className="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem ex optio voluptas porro unde harum?</p>
-                <Link to="/" className="button">
+                <Link to="/blog/:id" className="button">
                     Read More
                 </Link>
             </div>
