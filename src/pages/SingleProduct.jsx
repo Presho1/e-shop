@@ -6,6 +6,7 @@ import ReactStars from "react-rating-stars-component";
 import ReactImageZoom from 'react-image-zoom';
 import Color from '../components/Color';
 import {BsHeart, BsShuffle} from 'react-icons/bs'
+import { Link } from 'react-router-dom';
 
 
 const SingleProduct = () => {
@@ -16,6 +17,16 @@ const SingleProduct = () => {
         img: "https://i5.walmartimages.com/asr/2b527a08-4236-420b-ad36-c1d885d90665.5992358b49940720b6bc0b44a7b98f04.jpeg"};
 
     const [orderedProduct, setorderedProduct] = useState(true);
+    // const copyToClipboard = (text) =>{
+    //     console.log('text', text);
+    //     var textField = document.createElement('textarea');
+    //     textField.innerText = text;
+    //     document.body.appendChild(textField);
+    //     textField.select();
+    //     document.execCommand('copy');
+    //     textField.remove();
+    // };
+
   return (
     <>
     <Meta title={'Product Name'} />
@@ -55,7 +66,7 @@ const SingleProduct = () => {
                             </div>
                             <a className='review-btn' href="#review">Write a Review</a>
                         </div>
-                        <div className="border-bottom py-3">
+                        <div className="py-2">
                             <div className='d-flex gap-10 align-items-center my-2'>
                                 <h3 className='product-heading'>Type:</h3>
                                 <p className='product-data'>Smartwatch</p>
@@ -117,29 +128,23 @@ const SingleProduct = () => {
                                     </a>
                                 </div>
                             </div>
-                            <div className='d-flex gap-10 align-items-center my-2'>
-                                <h3 className='product-heading'>Shipping & Returns</h3>
+                            <div className='d-flex gap-10 flex-column my-3'>
+                                <h3 className='product-heading'>Shipping & Returns:</h3>
                                 <p className='product-data'>
                                     Free shipping and returns avaliable on all orders! <br /> we ship to 
-                                    all US domestic orders within <b>5-10 business days!</b>
+                                    all US domestic orders within 
+                                    <b>5-10 business days!</b>
                                 </p>
                             </div>
-                            <div className='d-flex gap-10 align-items-center my-2'>
-                                <h3 className='product-heading'>Materials</h3>
+                            <div className='d-flex gap-10 flex-column my-3'>
+                                <h3 className='product-heading'>Dimensions:</h3>
                                 <p className='product-data'>
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium officia 
                                      ad saepe quidem veniam quibusdam ab. Ad suscipit tempora eos. Lorem, ipsum dolor.
                                 </p>
                             </div>
-                            <div className='d-flex gap-10 align-items-center my-2'>
-                                <h3 className='product-heading'>Dimensions</h3>
-                                <p className='product-data'>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium officia 
-                                     ad saepe quidem veniam quibusdam ab. Ad suscipit tempora eos. Lorem, ipsum dolor.
-                                </p>
-                            </div>
-                            <div className='d-flex gap-10 align-items-center my-2'>
-                                <h3 className='product-heading'>Care Instructions</h3>
+                            <div className='d-flex gap-10 flex-column my-3'>
+                                <h3 className='product-heading'>Care Instructions:</h3>
                                 <p className='product-data'>
                                     Use a soft damp cloth and a drop of mild soap to remove haze. Air dry.
                                 </p>
