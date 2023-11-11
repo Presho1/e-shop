@@ -45,16 +45,16 @@ const Footer = () => {
                   preciousolayinka8@gmail.com
                 </a>
                 <div className='social_icons d-flex align-items-center gap-30 mt-4 '>
-                  <a className='text-white' href="#">
+                  <a className='text-white' href="https://www.linkedin.com/feed/">
                     <BsLinkedin className='fs-4' />
                   </a>
-                  <a className='text-white' href="#">
+                  <a className='text-white' href="https://github.com/Presho1">
                     <BsGithub className='fs-4' />
                   </a>
-                  <a className='text-white' href="#">
+                  <a className='text-white' href="https://www.youtube.com/">
                     <BsYoutube className='fs-4' />
                   </a>
-                  <a className='text-white' href="#">
+                  <a className='text-white' href="https://www.instagram.com/">
                     <BsInstagram className='fs-4' />
                   </a>
                 </div>
@@ -109,7 +109,7 @@ const Footer = () => {
           <div className="row">
             <div className="col-12">
               <p className='text-center mb-0 text-white'>
-                &copy; {new Date().getFullYear()}; Powered by Yinks ♥️
+                &copy; {new Date().getFullYear()} Powered by Yinks ♥️
               </p>
             </div>
           </div>

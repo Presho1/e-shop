@@ -2,12 +2,12 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { BiArrowBack} from "react-icons/bi";
 import watch from '../images/watch.jpg';
+import Container from '../components/Container';
 
 const Checkout = () => {
   return (
     <>
-    <div className="chechout-wrapper py-5 home-wrapper-2">
-        <div className="container-xxl">
+        <Container class1="chechout-wrapper py-5 home-wrapper-2">
             <div className="row">
                 <div className="col-7">
                     <div className="checkout-left-data">
@@ -15,7 +15,7 @@ const Checkout = () => {
                         <nav style={{"--bs-breadcrumb-divider": '>'}} aria-label="breadcrumb">
                             <ol className="breadcrumb">
                                 <li className="breadcrumb-item">
-                                    <Link className='text-dark' to='/cart'>Cart</Link>
+                                    <Link className='text-dark ' to='/cart'>Cart</Link>
                                 </li>
                                 &nbsp;/
                                 <li className="breadcrumb-item active" aria-current="page">
@@ -34,7 +34,7 @@ const Checkout = () => {
                         <h4 className='title'>
                             Contact Information
                         </h4>
-                        <p className="user-details">
+                        <p className="user-details total-price">
                             Precious Olayinka (preciousolayinka8@gmail.com)
                         </p>
                         <h4 className='title py-2'>
@@ -83,15 +83,15 @@ const Checkout = () => {
                 </div>
                 <div className="col-5">
                     <div className='border-bottom py-4'>
-                        <div className="d-flex gap-10 align-items-center">
+                        <div className="d-flex gap-10 mb-2 align-items-center">
                             <div className='w-75 d-flex gap-10'>
                                 <div className='w-25 position-relative'> 
-                                    <span style={{top: "-10px", right: "2px"}} className='badge bg-secondary text-white rounded-circle p-2 position-absolute'> 1 </span>
+                                    <span style={{top: "-10px", right: "2px"}} className='badge bg-secondary text-white rounded-circle p-2 position-absolute'> 8 </span>
                                     <img className='img-fluid' src={ watch } alt="product" />
                                 </div>
                                 <div>
-                                    <h5 className="title">Yinka</h5>
-                                    <p>s / olayinka</p>
+                                    <h5 className="total">Honor T1 7.0 GB RAM 8GB ROM 7 INCH With Wi-Fi+3G Tablet</h5>
+                                    <p className="total-price">S / #BSCEDE</p>
                                 </div>
                             </div>
                             <div className='flex-grow-1'>
@@ -101,23 +101,21 @@ const Checkout = () => {
                     </div>
                     <div className='border-bottom py-4'>
                         <div className='d-flex justify-content-between align-items-center'>
-                            <p>Subtotal</p>
-                            <p>$1000</p>
+                            <p className='total'>Subtotal</p>
+                            <p className='total-price'>$1000</p>
                         </div>
                         <div className='d-flex justify-content-between align-items-center'>
-                            <p className='mb-0'>Shipping</p>
-                            <p className='mb-0'>$1000</p>
+                            <p className='mb-0 total'>Shipping</p>
+                            <p className='mb-0 total-price'>$1000</p>
                         </div>
                     </div>
                     <div className='d-flex justify-content-between align-items-center py-4'>
-                        <h4>Total</h4>
-                        <h5>$1000</h5>
+                        <h4 className='total'>Total</h4>
+                        <h5 className='total-price'>$1000</h5>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-    
+        </Container>
     </>
   )
 }

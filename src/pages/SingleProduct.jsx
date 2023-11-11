@@ -6,7 +6,8 @@ import ReactStars from "react-rating-stars-component";
 import ReactImageZoom from 'react-image-zoom';
 import Color from '../components/Color';
 import {BsHeart, BsShuffle} from 'react-icons/bs'
-import { Link } from 'react-router-dom';
+import Container from '../components/Container';
+
 
 
 const SingleProduct = () => {
@@ -17,6 +18,7 @@ const SingleProduct = () => {
         img: "https://i5.walmartimages.com/asr/2b527a08-4236-420b-ad36-c1d885d90665.5992358b49940720b6bc0b44a7b98f04.jpeg"};
 
     const [orderedProduct, setorderedProduct] = useState(true);
+
     // const copyToClipboard = (text) =>{
     //     console.log('text', text);
     //     var textField = document.createElement('textarea');
@@ -31,8 +33,7 @@ const SingleProduct = () => {
     <>
     <Meta title={'Product Name'} />
     <BreadCrumb title='Product Name' />
-    <div className="main-product-wrapper py-5 home-wrapper-2">
-        <div className="container-xxl">
+    <Container class1="main-product-wrapper py-5 home-wrapper-2">
             <div className="row">
                 <div className="col-6">
                     <div className="main-product-image">
@@ -118,12 +119,12 @@ const SingleProduct = () => {
                             </div>
                             <div className='d-flex align-items-center gap-15'>
                                 <div>
-                                    <a href="">
+                                    <a href="hj">
                                     <BsShuffle className='fs-5 me-2' /> Add to Compare
                                     </a>
                                 </div>
                                 <div>
-                                    <a href="">
+                                    <a href="fg">
                                         <BsHeart className='fs-5 me-2' /> Add to Wishlist
                                     </a>
                                 </div>
@@ -153,10 +154,8 @@ const SingleProduct = () => {
                     </div>    
                 </div> 
             </div>
-        </div>
-    </div>
-    <section className="description-wrapper py-5 home-wrapper-2">
-        <div className="container-xxl">
+    </Container>
+    <Container class1="description-wrapper py-5 home-wrapper-2">
             <div className="row">
                 <div className="col-12">
                     <h4>Description</h4>
@@ -170,10 +169,8 @@ const SingleProduct = () => {
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <section className="reviews-wrapper home-wrapper-2">
-        <div className="container-xxl">
+    </Container>
+    <Container class1="reviews-wrapper home-wrapper-2">
             <div className="row">
                 <div className="col-12">
                     <h3 id='review'>Reviews</h3>
@@ -195,7 +192,7 @@ const SingleProduct = () => {
                             {
                                 orderedProduct && (
                                     <div>
-                                        <a className='text-decoration-underline' href="">
+                                        <a className='text-decoration-underline' href="https://www.skillsyouneed.com/write/review-writing.html">
                                             Write a Review
                                         </a>
                                     </div>
@@ -254,10 +251,8 @@ const SingleProduct = () => {
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <section className="popular-wrapper py-5 home-wrapper-2">
-        <div className="container-xxl">
+    </Container>
+    <Container class1="popular-wrapper py-5 home-wrapper-2">
           <div className="row">
             <div className="col-12">
               <h3 className="section-heading">Our Popular Products</h3>
@@ -267,8 +262,7 @@ const SingleProduct = () => {
             <ProductCard/>
             <ProductCard/>
           </div>
-        </div>
-      </section>
+      </Container>
     </>
   )
 }

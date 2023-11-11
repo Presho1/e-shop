@@ -1,9 +1,11 @@
+/* eslint-disable jsx-a11y/iframe-has-title */
 import React from 'react'
 import BreadCrumb from '../components/BreadCrumb'
 import Meta from '../components/Meta';
 import {AiOutlineHome} from 'react-icons/ai'
 import {BsEnvelope, BsInfoLg} from 'react-icons/bs'
 import {MdCall} from 'react-icons/md'
+import Container from '../components/Container';
 
 
 const Contact = () => {
@@ -11,17 +13,16 @@ const Contact = () => {
     <>
       <Meta title={'Contact Us'} />
       <BreadCrumb title='Contact Us' />
-      <div className="contact-wrapper py-5 home-wrapper-2">
-        <div className="container-xxl">
+      <Container class1="contact-wrapper py-5 home-wrapper-2">
           <div className="row">
             <div className="col-12">
               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31716.113635770074!2d3.3939672267121814!3d6.456340881699526!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8b342006b16d%3A0xb0863987cb2f9b90!2sDolphine%20Estate%20106104%2C%20Lagos!5e0!3m2!1sen!2sng!4v1697538852928!5m2!1sen!2sng" 
-              width="600" 
-              height="450" 
-              className='border-0 w-100'
-              allowFullScreen="" 
-              loading="lazy" 
-              referrerPolicy="no-referrer-when-downgrade">
+                width="600" 
+                height="450" 
+                className='border-0 w-100'
+                allowFullScreen="" 
+                loading="lazy" 
+                referrerPolicy="no-referrer-when-downgrade">
               </iframe>
             </div>
             <div className="col-12 mt-5">
@@ -85,8 +86,7 @@ const Contact = () => {
               </div>
             </div>
           </div>
-        </div> 
-      </div>
+      </Container>
     </>
   )
 }

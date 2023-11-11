@@ -773,6 +773,20 @@ margin-bottom: 0px;
   font-size: 14px;
   color: var(--color-777777)
 }
-
-
 /* Cart Page Ends Here */
+
+/* Shipping Page */
+.total{
+  font-size: 15px;
+  color: var(--color-1c1c1b);
+}
+.total-price{
+  font-size: 14px;
+  color: var(--color-777777);
+}
+
+
+
+
+/* Shipping Page Ends Here */
+
