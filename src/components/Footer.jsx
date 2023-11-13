@@ -109,7 +109,7 @@ const Footer = () => {
           <div className="row">
             <div className="col-12">
               <p className='text-center mb-0 text-white'>
-                &copy; {new Date().getFullYear()} Powered by Yinks ♥️
+                &copy; {new Date().getFullYear()} Developed by Yinka ♥️
               </p>
             </div>
           </div>

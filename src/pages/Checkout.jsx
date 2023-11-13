@@ -11,7 +11,7 @@ const Checkout = () => {
             <div className="row">
                 <div className="col-7">
                     <div className="checkout-left-data">
-                        <h3 className='website-name'>Tech Hub</h3>
+                        <h3 className='website-name'>Gadget Zone</h3>
                         <nav style={{"--bs-breadcrumb-divider": '>'}} aria-label="breadcrumb">
                             <ol className="breadcrumb">
                                 <li className="breadcrumb-item">

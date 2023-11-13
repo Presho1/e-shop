@@ -30,9 +30,9 @@ const Header = () => {
         <div className="container-xxl">
           <div className="row align-items-center">
             <div className="col-2">
-              <h2>
-                <Link className='text-white'><i>Tech Hub</i></Link>
-              </h2>
+              <h3>
+                <Link to='/' className='text-white'><i>Gadget Zone</i></Link>
+              </h3>
             </div>
             <div className="col-5">
               <div className="input-group">
